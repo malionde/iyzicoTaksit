@@ -9,4 +9,4 @@ Web Görünümü:
 ![Web Browser](https://i.imgur.com/j6xodop.png)
 
 Mobil Tarayıcı Görünümü:
-![Mobile Browser](https://i.imgur.com/RP3fRd9) 
+![Mobile Browser](https://i.imgur.com/RP3fRd9.png) 
