@@ -1,0 +1,173 @@
+<style>
+
+html {
+  box-sizing: border-box;
+}
+html * {
+  box-sizing: inherit;
+}
+
+.cards {
+  margin-left: 100px;
+}
+.cards:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.card {
+  width: 12.5%;
+  margin-bottom: 30px;
+  border-top: 1px solid #b4b4b4;
+  float: left;
+}
+.card:nth-child(7n) {
+  border-right: 1px solid #b4b4b4;
+}
+.card__head {
+  height: 60px;
+  border-left: 1px solid #b4b4b4;
+  border-bottom: 2px solid #45d7e6;
+  text-align: center;
+  font-weight: bold;
+  line-height: 60px;
+  letter-spacing: 2px;
+}
+.card__content {
+  position: relative;
+}
+.card__content:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.card__col {
+  float: left;
+  width: 50%;
+}
+.card__col--installment {
+  position: absolute;
+  right: 100%;
+  display: none;
+  width: 66px;
+}
+.card__col--installment:before {
+  position: absolute;
+  top: -2px;
+  left: 0;
+  right: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  background-color: #45d7e6;
+}
+.card:nth-child(0n + 1) .card__col--installment {
+  display: block;
+}
+.card__cell {
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  border-left: 1px solid rgba(106, 106, 106, 0.5);
+  border-bottom: 1px solid rgba(106, 106, 106, 0.5);
+  white-space: nowrap;
+}
+.card__cell--head {
+  height: 40px;
+  line-height: 40px;
+  background-color: #d6d6d6;
+}
+.card--Bonus .card__head {
+  color: #009a4c;
+}
+.card--Bonus .card__col--default {
+  background-color: rgba(0, 154, 76, 0.25);
+}
+.card--World .card__head {
+  color: #860092;
+}
+.card--World .card__col--default {
+  background-color: rgba(134, 0, 146, 0.25);
+}
+.card--Maximum .card__head {
+  color: #ff0097;
+}
+.card--Maximum .card__col--default {
+  background-color: rgba(255, 0, 151, 0.25);
+}
+.card--Axess .card__head {
+  color: #ffcc00;
+}
+.card--Axess .card__col--default {
+  background-color: rgba(255, 204, 0, 0.25);
+}
+.card--Cardfinans .card__head {
+  color: #0060b4;
+}
+.card--Cardfinans .card__col--default {
+  background-color: rgba(0, 96, 180, 0.25);
+}
+.card--Paraf .card__head {
+  color: #00b4ff;
+}
+.card--Paraf .card__col--default {
+  background-color: rgba(0, 180, 255, 0.25);
+}
+.card--BankkartCombo .card__head {
+  color: #FF0000;
+}
+.card--BankkartCombo .card__col--default {
+  background-color: rgba(255, 0, 0, 0.25);
+}
+@media screen and (max-width: 991px) {
+  .card {
+    width: 33.3333333333%;
+  }
+  .card .card__col--installment {
+    display: none;
+  }
+  .card:nth-child(3n + 1) .card__col--installment {
+    display: block;
+  }
+  .card:nth-child(3n) {
+    border-right: 1px solid #b4b4b4;
+  }
+}
+@media screen and (max-width: 767px) {
+  .card {
+    width: 50%;
+  }
+  .card:nth-child(n + 1) .card__col--installment {
+    display: none;
+  }
+  .card:nth-child(2n + 1) .card__col--installment {
+    display: block;
+  }
+  .card:nth-child(n + 1) {
+    border-right: none;
+  }
+  .card:nth-child(2n) {
+    border-right: 1px solid #b4b4b4;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .cards {
+    margin-left: 50px;
+  }
+
+  .card {
+    width: 100%;
+  }
+  .card__col--installment {
+    width: 50px;
+  }
+  .card:nth-child(n + 1) .card__col--installment {
+    display: block;
+  }
+  .card:nth-child(n + 1) {
+    border-right: 1px solid #b4b4b4;
+  } 
+}
+</style>
