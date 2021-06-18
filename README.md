@@ -3,8 +3,6 @@ Woocommerce için hazırlanmış bu modül iyzico taksit seçeneklerini yeni bir
 
 **Kurulum** : indireceğiniz zip dosyasını, wordpress yönetici panelinden “Eklentiler > Yeni ekle” sayfasından yükleyerek kullanabilirsiniz.
 
-**Önizleme** : http://malio.me/wp/urun/test/
-
 **Web Görünümü**:
 ![Web Browser](https://i.imgur.com/j6xodop.png)
 
